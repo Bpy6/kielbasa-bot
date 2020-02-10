@@ -1,0 +1,7 @@
+requests
+random
+time
+json
+urllib
+webbrowser
+io
