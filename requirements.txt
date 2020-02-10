@@ -1,6 +1,2 @@
 requests
-time
-json
-urllib
-webbrowser
 io
