@@ -1,1 +1,1 @@
-web
+web python tlgbot.py
