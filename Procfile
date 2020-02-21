@@ -1,1 +1,1 @@
-web python tlgbot.py
+worker python tlgbot.py
