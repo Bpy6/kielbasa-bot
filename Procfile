@@ -1,1 +1,1 @@
-web python tlgbot.ipynb
+web python tlgbot.py
