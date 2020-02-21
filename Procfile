@@ -1,1 +1,1 @@
-web python tlgbot.py
+web python tlgbot.py $PORT localhost
