@@ -190,7 +190,7 @@ if __name__ == '__main__':
         except (TypeError):
             print('TypeError exception occurred')
         except (UnicodeEncodeError):
-            print('Unicode exception occured)
+            print('Unicode exception occured')
         
 
 
