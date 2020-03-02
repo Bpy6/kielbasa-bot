@@ -126,6 +126,11 @@ class KielbasaBot:
                     if keyword in event.get('message').get('text').lower():
                         self.sendMessage(event, 'Ну, держи колбасный рецептик, дружок!')
                         self.sendMessage(event, self.getRecipe())
+                if '@kiel' in event.get('message').get('text').lower():
+                    self.sendMessage(event, 'Доброе утро! Я Бот-колбасник! Попросите у меня колбасы или сосисок, и я вам заправлю!')
+                    self.sendMessage(event, 'Ещё я могу делиться рецептами колбасных блюд! Просто попросите меня о рецепте!')
+                    self.sendMessage(event, 'Если ты пришлёшь мне свою геолокацию, укажу тебе куда пойти отведать колбасок!')
+                    self.sendMessage(event, 'А ещё я могу определять, что на картинках. Загрузи фоточку, и я скажу, кильбаса ли на ней.')
                         
             if 'new_chat_participant' in event.get('message'):
                 if event.get('message').get('new_chat_participant').get('username') is 'KielbasaBot':
@@ -133,7 +138,8 @@ class KielbasaBot:
                     self.sendMessage(event, 'Ещё я могу делиться рецептами колбасных блюд! Просто попросите меня о рецепте!')
                     self.sendMessage(event, 'Если ты пришлёшь мне свою геолокацию, укажу тебе куда пойти отведать колбасок!')
                     self.sendMessage(event, 'А ещё я могу определять, что на картинках. Загрузи фоточку, и я скажу, кильбаса ли на ней.')
-    
+            
+            
     def getRecipe(self):
         recipes = readFile('recipes.txt')
         targetRecipe = recipes[random.randint(0,len(recipes)-1)]
