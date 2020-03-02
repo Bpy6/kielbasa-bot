@@ -189,6 +189,8 @@ if __name__ == '__main__':
             kielbasaBot.checkForEvents(kielbasaBot.update())
         except (TypeError):
             print('TypeError exception occurred')
+        except (UnicodeEncodeError)
+            print('Unicode exception occured)
         
 
 
