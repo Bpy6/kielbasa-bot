@@ -111,7 +111,7 @@ class KielbasaBot:
                     else: kielbasabool = False
                 if kielbasabool: 
                     self.sendMessage(event, 'О да! Это изображение кильбасы!')
-                else: self.sendMessage(event, 'Нет, это не кильбаса!')
+                else: self.sendMessage(event, f'Нет, это не кильбаса, это {result}!')
                 
             if 'location' in event.get('message'):
                 self.sendMessage(event, 'Товарищ! Вот здесь подают колбаски!')
